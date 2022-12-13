@@ -1,12 +1,12 @@
-import { OptionsContextProvider } from "../context/OptionsContextProvider";
-import "../styles/globals.css";
+import Layout from '../components/layout/layout';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-	return (
-		<OptionsContextProvider>
-			<Component {...pageProps} />
-		</OptionsContextProvider>
-	);
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
 export default MyApp;
